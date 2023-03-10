@@ -28,3 +28,5 @@ LinearGradient gradient = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
     stops: const [0.4, 1]);
+
+final List BG = ['bg1', 'bg2', 'bg3'];
