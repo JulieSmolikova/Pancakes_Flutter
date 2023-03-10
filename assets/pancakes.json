@@ -1,0 +1,57 @@
+[
+  {
+    "image": "p1",
+    "name": "Honey Pancake",
+    "price": "7"
+  },
+  {
+    "image": "p2",
+    "name": "Blueberry Pancake",
+    "price": "5"
+  },
+  {
+    "image": "p3",
+    "name": "Blueberry Crepe",
+    "price": "8"
+  },
+  {
+    "image": "p4",
+    "name": "Blackcurrant Pancake",
+    "price": "7"
+  },
+  {
+    "image": "p5",
+    "name": "Pancake with Nnuts",
+    "price": "6"
+  },
+  {
+    "image": "p6",
+    "name": "Berries and Chocolate",
+    "price": "8"
+  },
+  {
+    "image": "p7",
+    "name": "Vanilla and Strawberry",
+    "price": "8"
+  },
+  {
+    "image": "p8",
+    "name": "Chocolate Pancake",
+    "price": "9"
+  },
+  {
+    "image": "p9",
+    "name": "Berry Mix",
+    "price": "5"
+  },
+  {
+    "image": "p10",
+    "name": "Honey and Vanilla",
+    "price": "6"
+  },
+  {
+    "image": "p11",
+    "name": "Raisins and almonds",
+    "price": "7"
+  }
+]
