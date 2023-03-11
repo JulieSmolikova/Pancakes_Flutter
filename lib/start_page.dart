@@ -5,12 +5,6 @@ import 'package:pancakes/widgets/gradient_text.dart';
 import 'package:pancakes/widgets/radio_button.dart';
 import 'package:pancakes/widgets/list_bg.dart';
 
-// enum Number {
-//   bg1,
-//   bg2,
-//   bg3,
-// }
-
 class StartPage extends StatefulWidget {
   const StartPage({Key? key}) : super(key: key);
 
@@ -19,8 +13,6 @@ class StartPage extends StatefulWidget {
 }
 
 class _StartPageState extends State<StartPage> {
-  //dynamic selectedButton;
-
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -35,54 +27,9 @@ class _StartPageState extends State<StartPage> {
               height: size.height,
               child: Stack(
                 children: [
-
                   ListBG(
                     onBG: (String BG) {},
-                    // child: SizedBox(
-                    //       child: Stack(
-                    //         children: [
-                    //           Positioned(
-                    //             bottom: size.height * 0.155,
-                    //             left: size.width * 0.40,
-                    //             child: Row(children: [
-                    //               Buttons(
-                    //                   onPress: (() {
-                    //                     setState(() {
-                    //                       selectedButton = Number.bg1;
-                    //                     });
-                    //                   }),
-                    //                   width: selectedButton == Number.bg1 ? 40 : 10,
-                    //                   color: selectedButton == Number.bg1
-                    //                       ? KGBlue.withOpacity(0.8)
-                    //                       : Colors.white.withOpacity(0.8)),
-                    //               Buttons(
-                    //                   onPress: (() {
-                    //                     setState(() {
-                    //                       selectedButton = Number.bg2;
-                    //                     });
-                    //                   }),
-                    //                   width: selectedButton == Number.bg2 ? 40 : 10,
-                    //                   color: selectedButton == Number.bg2
-                    //                       ? KGBlue.withOpacity(0.8)
-                    //                       : Colors.white.withOpacity(0.8)),
-                    //               Buttons(
-                    //                   onPress: (() {
-                    //                     setState(() {
-                    //                       selectedButton = Number.bg3;
-                    //                     });
-                    //                   }),
-                    //                   width: selectedButton == Number.bg3 ? 40 : 10,
-                    //                   color: selectedButton == Number.bg3
-                    //                       ? KGBlue.withOpacity(0.8)
-                    //                       : Colors.white.withOpacity(0.8)),
-                    //             ]),
-                    //           ),
-                    //         ],
-                    //       ),
-                    //
-                    // ),
                   ),
-
                   Positioned(
                       top: size.height * 0.05,
                       left: size.width * 0.3,
@@ -111,41 +58,6 @@ class _StartPageState extends State<StartPage> {
                           color: Colors.transparent,
                           child: GradientText('Breakfast',
                               style: style2, gradient: gradient))),
-                  // Positioned(
-                  //     bottom: size.height * 0.155,
-                  //     left: size.width * 0.40,
-                  //     child: Row(children: [
-                  //       Buttons(
-                  //           onPress: (() {
-                  //             setState(() {
-                  //               selectedButton = Number.bg1;
-                  //             });
-                  //           }),
-                  //           width: selectedButton == Number.bg1 ? 40 : 10,
-                  //           color: selectedButton == Number.bg1
-                  //               ? KGBlue.withOpacity(0.8)
-                  //               : Colors.white.withOpacity(0.8)),
-                  //       Buttons(
-                  //           onPress: (() {
-                  //             setState(() {
-                  //               selectedButton = Number.bg2;
-                  //             });
-                  //           }),
-                  //           width: selectedButton == Number.bg2 ? 40 : 10,
-                  //           color: selectedButton == Number.bg2
-                  //               ? KGBlue.withOpacity(0.8)
-                  //               : Colors.white.withOpacity(0.8)),
-                  //       Buttons(
-                  //           onPress: (() {
-                  //             setState(() {
-                  //               selectedButton = Number.bg3;
-                  //             });
-                  //           }),
-                  //           width: selectedButton == Number.bg3 ? 40 : 10,
-                  //           color: selectedButton == Number.bg3
-                  //               ? KGBlue.withOpacity(0.8)
-                  //               : Colors.white.withOpacity(0.8)),
-                  //     ])),
                   Positioned(
                     bottom: size.height * 0.06,
                     left: size.width * 0.18,
@@ -208,7 +120,6 @@ class _StartPageState extends State<StartPage> {
                       ))
                 ],
               ),
-              //)
             )),
       ),
     );

@@ -27,6 +27,7 @@ flutter:
   assets:
     - assets/images/bg/
     - assets/images/catalog/
+    - assets/images/icons/
 
   fonts:
      - family: Redressed
