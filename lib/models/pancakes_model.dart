@@ -20,8 +20,8 @@ class Pancakes {
      );
 }
 
-class GamesApi {
-  static Future<List<Pancakes>> getGamesLocally(BuildContext context) async {
+class PancakesApi {
+  static Future<List<Pancakes>> getPancakesLocally(BuildContext context) async {
     final assetBungle = DefaultAssetBundle.of(context);
     final data = await assetBungle.loadString('assets/pancakes.json');
     final body = jsonDecode(data);

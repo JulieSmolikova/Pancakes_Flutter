@@ -1,7 +1,9 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:pancakes/catalog_page.dart';
 import 'package:pancakes/item_page.dart';
 import 'package:pancakes/start_page.dart';
+
 
 
 void main() {
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/start_page': (context) => const StartPage(),
         '/catalog_page': (context) => const CatalogPage(),
-        '/item_page': (context) => const ItemPage(),
+        //'/item_page': (context) => const ItemPage(item: item),
       },
       initialRoute: '/start_page',
       home: const Scaffold(),

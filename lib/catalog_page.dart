@@ -1,10 +1,10 @@
-import 'dart:ui';
+import 'dart:ui' show Clip, Offset, Radius, Size;
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:pancakes/widgets/circle_box.dart';
 import 'package:pancakes/widgets/constants.dart';
 import 'package:pancakes/widgets/gradient_text.dart';
+import 'package:pancakes/widgets/list_view_catalog.dart';
 import 'package:pancakes/widgets/painter_catalog.dart';
 
 class CatalogPage extends StatefulWidget {
@@ -38,7 +38,7 @@ class _CatalogPageState extends State<CatalogPage> {
                           BoxShadow(
                               color: Colors.white.withOpacity(0.55),
                               blurRadius: 200,
-                              offset: Offset(0, 0))
+                              offset: const Offset(0, 0))
                         ]
                     )
                 ),
@@ -52,14 +52,10 @@ class _CatalogPageState extends State<CatalogPage> {
                     borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(50),
                         bottomRight: Radius.circular(50))),
-
-                // child: CustomPaint(
-                //   painter: PainterCatalog(),
                 child: Image.asset(
                   'assets/images/bg/bg1.jpg',
                   fit: BoxFit.cover,
                 ),
-                // ),
               ),
               SizedBox(
                 width: size.width,
@@ -84,7 +80,6 @@ class _CatalogPageState extends State<CatalogPage> {
                         height: size.height * 0.045,
                         padding: const EdgeInsets.all(7),
                         decoration: BoxDecoration(
-                            color: Colors.grey,
                             gradient: gradient_btn,
                             borderRadius: BorderRadius.circular(30),
                             border: Border.all(color: KWhite)),
@@ -169,6 +164,13 @@ class _CatalogPageState extends State<CatalogPage> {
                       ],
                     )
                   )),
+
+              Positioned(
+                top: size.height * 0.5,
+                left: 0,
+                child:
+                  const ListViewCatalog()
+              )
 
             ],
           ),

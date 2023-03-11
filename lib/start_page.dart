@@ -2,7 +2,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:pancakes/widgets/constants.dart';
 import 'package:pancakes/widgets/gradient_text.dart';
-import 'package:pancakes/widgets/radio_button.dart';
 import 'package:pancakes/widgets/list_bg.dart';
 
 class StartPage extends StatefulWidget {

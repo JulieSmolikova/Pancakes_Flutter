@@ -28,6 +28,7 @@ flutter:
     - assets/images/bg/
     - assets/images/catalog/
     - assets/images/icons/
+    - assets/pancakes.json
 
   fonts:
      - family: Redressed
