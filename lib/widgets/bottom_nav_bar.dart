@@ -51,9 +51,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
           ),
 
           Container(
-            width: 57,
-            height: 57,
-            margin: const EdgeInsets.only(top: 20, left: 11),
+            width: 58,
+            height: 58,
+            margin: const EdgeInsets.only(top: 20, bottom: 1, left: 10),
             padding: (index == selectedTab
                 ? const EdgeInsets.all(10)
                 : const EdgeInsets.all(17)),
