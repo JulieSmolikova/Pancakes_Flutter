@@ -1,11 +1,14 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:pancakes/catalog_page.dart';
 import 'package:pancakes/item_page.dart';
 import 'package:pancakes/models/pancakes_model.dart';
 import 'package:pancakes/start_page.dart';
 
 void main() {
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   runApp(const MyApp());
 }
 

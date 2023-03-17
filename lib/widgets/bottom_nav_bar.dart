@@ -41,6 +41,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     return GestureDetector(
       onTap: () => onSelectedTab(index),
       child: Stack(
+        clipBehavior: Clip.none,
         children: [
           Container(
             margin: const EdgeInsets.only(top: 15),
