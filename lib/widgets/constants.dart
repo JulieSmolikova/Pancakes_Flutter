@@ -14,6 +14,9 @@ TextStyle style1 = const TextStyle(
 const style2 = TextStyle(fontSize: 65, fontFamily: 'Redressed');
 TextStyle style3 = TextStyle(fontSize: 14, color: Colors.white.withOpacity(0.8));
 const style4 = TextStyle(fontSize: 45, fontFamily: 'Redressed', fontWeight: FontWeight.bold);
+TextStyle style5 = TextStyle(color: Colors.white.withOpacity(0.8), fontSize: 22, fontWeight: FontWeight.bold);
+TextStyle style6 = TextStyle(color: Colors.white.withOpacity(0.8), fontSize: 11, fontWeight: FontWeight.bold);
+TextStyle style7 = TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 18, fontWeight: FontWeight.bold);
 
 //color
 Color KBrownL = const Color(0xffFFCC80).withOpacity(0.9);
@@ -43,6 +46,18 @@ const LinearGradient gradient_btn = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
     stops: [0.2, 0.7]);
+
+LinearGradient gradient_box = LinearGradient(
+    colors: [Colors.blue.shade400.withOpacity(0.7), KGBlueD.withOpacity(0.7)],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    stops: const [0.3, 0.6]);
+
+LinearGradient gradient_btn_green = LinearGradient(
+colors: [KGreen.withOpacity(0.6), KGBlueD],
+begin: Alignment.topLeft,
+end: Alignment.bottomRight,
+stops: const [0.3, 0.7]);
 
 //List
 final List BG = ['bg1', 'bg2', 'bg3'];
