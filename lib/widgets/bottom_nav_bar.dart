@@ -9,7 +9,7 @@ class BottomNavBar extends StatefulWidget {
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
-  int selectedTab = 0;
+  int selectedTab = 2;
 
   void onSelectedTab(int index) {
     if (selectedTab == index) return;
