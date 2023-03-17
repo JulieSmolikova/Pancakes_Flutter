@@ -24,8 +24,11 @@ class _BtnGreenState extends State<BtnGreen> {
           decoration: BoxDecoration(
               gradient: isPressed ? gradient_btn_green : null,
               boxShadow: isPressed ? [
-                BoxShadow(color: Colors.white.withOpacity(0.4), blurRadius: 20, offset: const Offset(-5, -5))
-              ] : null,
+                BoxShadow(
+                          color: Colors.white.withOpacity(0.4),
+                          blurRadius: 20,
+                          offset: const Offset(-5, -5))
+                    ] : null,
               borderRadius: BorderRadius.circular(50),
               border:
                   Border.all(color: Colors.white.withOpacity(0.5), width: 1.5)),

@@ -12,11 +12,22 @@ TextStyle style1 = const TextStyle(
           color: Color(0xffFFCC80))
     ]);
 const style2 = TextStyle(fontSize: 65, fontFamily: 'Redressed');
-TextStyle style3 = TextStyle(fontSize: 14, color: Colors.white.withOpacity(0.8));
-const style4 = TextStyle(fontSize: 45, fontFamily: 'Redressed', fontWeight: FontWeight.bold);
-TextStyle style5 = TextStyle(color: Colors.white.withOpacity(0.8), fontSize: 22, fontWeight: FontWeight.bold);
-TextStyle style6 = TextStyle(color: Colors.white.withOpacity(0.8), fontSize: 11, fontWeight: FontWeight.bold);
-TextStyle style7 = TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 18, fontWeight: FontWeight.bold);
+TextStyle style3 =
+    TextStyle(fontSize: 14, color: Colors.white.withOpacity(0.8));
+const style4 = TextStyle(
+    fontSize: 45, fontFamily: 'Redressed', fontWeight: FontWeight.bold);
+TextStyle style5 = TextStyle(
+    color: Colors.white.withOpacity(0.8),
+    fontSize: 22,
+    fontWeight: FontWeight.bold);
+TextStyle style6 = TextStyle(
+    color: Colors.white.withOpacity(0.8),
+    fontSize: 11,
+    fontWeight: FontWeight.bold);
+TextStyle style7 = TextStyle(
+    color: Colors.white.withOpacity(0.7),
+    fontSize: 18,
+    fontWeight: FontWeight.bold);
 
 //color
 Color KBrownL = const Color(0xffFFCC80).withOpacity(0.9);
@@ -26,7 +37,6 @@ const KGreen = Color(0xff2AFE8C);
 const KGBlue = Color(0xff448ed8);
 const KGBlueD = Color(0xff1d3a5a);
 Color KWhite = Colors.white.withOpacity(0.5);
-
 
 //gradient
 LinearGradient gradient = LinearGradient(
@@ -54,10 +64,10 @@ LinearGradient gradient_box = LinearGradient(
     stops: const [0.3, 0.6]);
 
 LinearGradient gradient_btn_green = LinearGradient(
-colors: [KGreen.withOpacity(0.6), KGBlueD],
-begin: Alignment.topLeft,
-end: Alignment.bottomRight,
-stops: const [0.3, 0.7]);
+    colors: [KGreen.withOpacity(0.6), KGBlueD],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    stops: const [0.3, 0.7]);
 
 //List
 final List BG = ['bg1', 'bg2', 'bg3'];

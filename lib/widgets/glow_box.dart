@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class GlowBox extends StatelessWidget {
   const GlowBox(
       {Key? key,
-        required this.width,
-        required this.height,
-        required this.colorBox,
-        required this.blurRadius})
+      required this.width,
+      required this.height,
+      required this.colorBox,
+      required this.blurRadius})
       : super(key: key);
 
   final double width;

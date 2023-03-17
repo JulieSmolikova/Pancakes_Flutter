@@ -34,32 +34,33 @@ class _CatalogPageState extends State<CatalogPage> {
                 Positioned(
                     top: size.height * 0.5,
                     left: 0,
-                    child: GlowBox(width: 70, height: 70, colorBox: Colors.white.withOpacity(0.6), blurRadius: 200)
-                ),
+                    child: GlowBox(
+                        width: 70,
+                        height: 70,
+                        colorBox: Colors.white.withOpacity(0.6),
+                        blurRadius: 200)),
                 Positioned(
                     top: size.height * 0.7,
                     left: 0,
-                    child: GlowBox(width: 70, height: 70, colorBox: Colors.white.withOpacity(0.6), blurRadius: 200)
-                ),
-
+                    child: GlowBox(
+                        width: 70,
+                        height: 70,
+                        colorBox: Colors.white.withOpacity(0.6),
+                        blurRadius: 200)),
                 Positioned(
                   top: size.height * 0.3,
                   left: size.width * 0.2,
                   child: Container(
                       width: 220,
                       height: 110,
-                      decoration: BoxDecoration(
-                          color: Colors.transparent,
-                          boxShadow: [
-                            BoxShadow(
-                                color: Colors.white.withOpacity(0.55),
-                                blurRadius: 200,
-                                offset: const Offset(0, 0))
-                          ]
-                      )
-                  ),
+                      decoration:
+                          BoxDecoration(color: Colors.transparent, boxShadow: [
+                        BoxShadow(
+                            color: Colors.white.withOpacity(0.55),
+                            blurRadius: 200,
+                            offset: const Offset(0, 0))
+                      ])),
                 ),
-
                 Container(
                   width: size.width,
                   height: size.height * 0.45,
@@ -74,7 +75,6 @@ class _CatalogPageState extends State<CatalogPage> {
                     fit: BoxFit.cover,
                   ),
                 ),
-
                 Positioned(
                   top: 0,
                   left: 0,
@@ -86,7 +86,6 @@ class _CatalogPageState extends State<CatalogPage> {
                     ),
                   ),
                 ),
-
                 Positioned(
                   top: size.height * 0.017,
                   left: size.width * 0.035,
@@ -135,7 +134,6 @@ class _CatalogPageState extends State<CatalogPage> {
                     ],
                   ),
                 ),
-
                 Positioned(
                     bottom: size.height * 0.62,
                     left: size.width * 0.035,
@@ -146,7 +144,6 @@ class _CatalogPageState extends State<CatalogPage> {
                           color: Colors.yellow,
                         ),
                         text: '4.9')),
-
                 Positioned(
                     bottom: size.height * 0.53,
                     left: size.width * 0.035,
@@ -159,48 +156,43 @@ class _CatalogPageState extends State<CatalogPage> {
                           ),
                         ),
                         text: '80')),
-
                 Positioned(
                     bottom: size.height * 0.53,
                     right: size.width * 0.035,
                     child: Container(
-                      width: size.width * 0.17,
-                      height: size.height * 0.08,
-                      clipBehavior: Clip.hardEdge,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          border: Border.all(color: KGBlue.withOpacity(0.5))),
-                      child: Stack(
-                        children: [
-                          Center(
-                            child: SizedBox(
-                              width: size.width * 0.17,
-                              height: size.height * 0.08,
+                        width: size.width * 0.17,
+                        height: size.height * 0.08,
+                        clipBehavior: Clip.hardEdge,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            border: Border.all(color: KGBlue.withOpacity(0.5))),
+                        child: Stack(
+                          children: [
+                            Center(
+                              child: SizedBox(
+                                width: size.width * 0.17,
+                                height: size.height * 0.08,
+                                child: Image.asset(
+                                  'assets/images/icons/map.png',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                            Center(
                               child: Image.asset(
-                              'assets/images/icons/map.png',
-                              fit: BoxFit.cover,
-                        ),
+                                'assets/images/icons/placeholder.png',
+                                height: 27,
+                              ),
                             ),
-                          ),
-                          Center(
-                            child: Image.asset(
-                              'assets/images/icons/placeholder.png', height: 27,
-                            ),
-                          ),
-                        ],
-                      )
-                    )),
-
+                          ],
+                        ))),
                 Positioned(
                     top: size.height * 0.46,
                     child: Container(
                         width: size.width,
                         height: size.height,
                         color: Colors.transparent,
-                        child: const ListViewCatalog()
-                    )
-                ),
-
+                        child: const ListViewCatalog())),
                 Positioned(
                     bottom: 0,
                     left: 0,
@@ -213,7 +205,6 @@ class _CatalogPageState extends State<CatalogPage> {
                         child: const BottomNavBar(),
                       ),
                     ))
-
               ],
             ),
           ),
